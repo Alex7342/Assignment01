@@ -1,5 +1,5 @@
 """
-Generate the largest prime number smaller than a given natural number n.
+5. Generate the largest prime number smaller than a given natural number n.
 If such a number does not exist, a message should be displayed.
 """
 
@@ -10,7 +10,7 @@ def isPrime(number):
         return False
 
     squareRoot = int(math.sqrt(number))
-    for i in range(3, squareRoot, 2):
+    for i in range(3, squareRoot + 1, 2):
         if (number % i == 0):
             return False
 
